@@ -4,7 +4,6 @@ body {
   font-family: "Cuprum", Arial, sans-serif;
 	font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
   color: rgb(0,0,0);
  	background-color: rgb(255,255,255);
 }
@@ -776,4 +775,84 @@ a {
   color: #32425c;
 }
 
+.filters h3 {
+  display: block;
+  width: 220px;
+  height: 38px;
+  padding-left: 22px;
+  padding-top: 10px;
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px; 
+  font-weight: 500;
+  background-color: #f7f3ec;
+  color: #000000;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+}
+
+
+fieldset legend {
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 30px; 
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.price-range {
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
+}
+
+.price-min input,
+.price-max input {
+  width: 93px;
+  height: 38px;
+  background-color: #f7f3ec;
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters .filter-option {
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.btn-catalog {
+  padding-top: 6px;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.filters button {
+  display: block;
+  width: 140px;
+  height: 38px;
+}
 
