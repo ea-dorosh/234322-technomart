@@ -738,4 +738,42 @@ a {
   height: 38px;
 }
 
+.bread-crumbs-area {
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px; 
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.bread-crumbs-area ul {
+  list-style: none;
+}
+
+.bread-crumbs-area a {
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px; 
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-name-area {
+  width: 940px;
+  height: 89px;
+  background-color: #f2f6f8;
+}
+
+.catalog-name-area h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 30px; 
+  font-weight: 500;
+  color: #32425c;
+}
+
 
