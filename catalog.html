@@ -3,51 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/header-logo.png" width="220" height="47" alt="Логотип магазина «Техномарт»">
-      </a>  
-        <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
-          <label>
-              <input class="visually-hidden" type="search" name="search" placeholder="Поиск:">
-          </label>
-        </form>
-      <a href="bookmarks.html">Закладки</a>
-      <a href="cart.html">Корзина</a>
-      <button class="btn" type="button">Оформить заказ</button>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <p class="phone">+7(812)555-05-55</p>
+        <div class="main-header-top">
+          <a class="main-header-logo" href="index.html">
+            Техномарт
+          </a> 
+          <form class="search-form" method="get" action="">
+                <label>
+                     <input class="visually-hidden" type="search" name="search" placeholder="Поиск:">
+                 </label>
+             </form>
+          <a href="#">Закладки</a>
+          <a href="#">Корзина</a>
+          <button class="btn" type="button">Оформить заказ</button>
+        </div>
+      <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+      <p class="phone">+7 (812) 555-05-55</p>
       <p class="adress">г. Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-      <a class="user-name" href="#"><span>Равшан Джамшутович</span></a>
-      <a class="user-logout" href="#">Выйти</a>
       <ul class="user-navigation"> 
-        <li><a class="user-link" href="#">Мои заказы</a></li>
-        <li><a class="user-link" href="#">Личный кабинет</a></li>
+        <li><a class="login-link" href="#">Войти</a></li>
+        <li><a class="registration-link" href="#">Регистрация</a></li>
       </ul> 
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li>
-            <a href="main.html">Главная</a>
+            <a href="index.html">Главная</a>
           </li>
           <li>
-            <a href="company.html">Компания</a>
+            <a href="#">Компания</a>
           </li>
           <li>
             <a href="catalog.html">Каталог</a>
           </li>
           <li>
-            <a href="news.html">Новости</a>
+            <a href="#">Новости</a>
           </li>
           <li>
-            <a href="specail.html">Спецпредложения</a>
+            <a href="#">Спецпредложения</a>
           </li>
           <li>
-            <a href="shipping.html">Доставка</a>
+            <a href="#">Доставка</a>
           </li>
           <li>
-            <a href="contacts.html">Контакты</a>
+            <a href="#">Контакты</a>
           </li>
         </ul>
       </nav>  
@@ -213,31 +217,31 @@
   		</article>
   	</main>
   	<footer class="main-footer">
-        <a class="footer-logo" href="index.html">
-          <img src="img/footer_logo.png" width="220" height="68" alt="Логотип магазина «Техномарт»">
-        </a>
+        <a class="main-footer-logo" href="index.html">
+                Техномарт
+            </a> 
         <nav class="footer-navigation">
           <ul class="footer-site-navigation">
             <li>
-              <a href="company.html">Компания</a>
+              <a href="#">Компания</a>
             </li>
             <li>
-              <a href="news.html">Новости</a>
+              <a href="#">Новости</a>
             </li>
             <li>
               <a href="catalog.html">Каталог</a>
             </li>         
             <li>
-              <a href="shipping.html">Доставка</a>
+              <a href="#">Доставка</a>
             </li>
             <li>
-              <a href="contacts.html">Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </nav>
         <div>
-          <p class="adress">г. Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-          <p class="phone">+7(812)555-05-55</p>
+          <p class="footer-contacts">г. Санкт-Петербург,ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555-05-55</p>
         </div>  
         <div>
           <ul class="footer-categories">
@@ -255,25 +259,27 @@
             </li>
           </ul>
       </div>
-      <div class="footer-copyrigth">
-        2010-2017 Компания "Техномарт"<br>
-        Все права защищены
-      </div>
-      <div class="footer-social">
-        <ul>
-          <li><a href="#" class="btn-social" aria-label="Мы во вконтакте"></a></li>
-          <li><a href="#" class="btn-social" aria-label="Мы на фэйсбуке"></a></li>
-          <li><a href="#" class="btn-social" aria-label="Мы в инстаграме"></a></li>
-        </ul>
-      </div>
-      <div class="footer-feedback">
-        <b>Обратаная связь:</b>
-        <a href="#" aria-label="Напишите нам на почту">mail@htmlacademy.ru</a>
-      </div>
-      <div class="footer-developed">
-        <b>Разработано - </b>
-        <a href="#">htmlacademy.ru</a>
-      </div>
+      <div class="footer-menu-bottom">
+        <div class="footer-copyrigth">
+          2010-2017 Компания "Техномарт"<br>
+          Все права защищены
+        </div>
+        <div>
+          <ul class="footer-social">
+            <li><a href="#" class="btn-social" aria-label="Мы во вконтакте"></a>Вконтакте</li>
+            <li><a href="#" class="btn-social" aria-label="Мы на фэйсбуке"></a>Фэйсбук</li>
+            <li><a href="#" class="btn-social" aria-label="Мы в инстаграме"></a>Инстаграм</li>
+          </ul>
+        </div>
+        <div class="footer-feedback">
+          <b>Обратаная связь:</b><br>
+          <a href="#" aria-label="Напишите нам на почту">mail@htmlacademy.ru</a>
+        </div>
+        <div class="footer-developed">
+          <b>Разработано - </b><br>
+          <a href="#">htmlacademy.ru</a>
+        </div>
+      </div>  
       </footer>
 
     <section class="modal modal-cart">
