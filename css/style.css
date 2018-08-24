@@ -1,165 +1,160 @@
 body {
-	margin: 0;
-  padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
-	font-size: 14px;
-  line-height: 24px;
-  color: rgb(0,0,0);
- 	background-color: rgb(255,255,255);
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .main-header-top {
-	color: rgb(255,255,255);
-	background-color: rgb(41,52,73);
+	color: #ffffff;
+	background-color: #293449;
 	font-size: 17px;
 	line-height: 18px;
 }
 
 .main-header .main-header-logo {
-	display: inline-block;
+	display: block;
 	width:220px;
 	height:47px;
 	font-size:24px;
 	line-height:24px;
-	color: rgb(255,255,255);
+	color: #ffffff;
 	background-color: #ee3643;
 	text-transform: uppercase;
 	text-align: center;
 	padding-top:13px;
- 	box-sizing: border-box;
- 	border-bottom: 5px solid rgb(181,41,51);
+ 	border-bottom: 5px solid #b52933;
 }
 
 .main-header .main-header-logo:hover {
-	color:rgb(255,255,255);
-	background-color: rgb(202,44,55);
-	border-bottom: 5px solid rgb(154,33,42);
+	background-color: #ca2c37;
+	border-bottom: 5px solid #9a212a;
 }
 
 .main-header .main-header-logo:active {
-  color:rgb(255,255,255);
-	background-color: rgb(186,39,50);
-	border-bottom: 5px solid rgb(142,30,38);
+	background-color: #ba2732;
+	border-bottom: 5px solid #8e1e26;
 }
 
 .main-header input[type="search"]::-webkit-input-placeholder {
-  color: rgb(255,255,255);
+  color: #ffffff;
 }
 
 .main-header input {
 	font: inherit;
 	width: 270px;
 	height: 42px;
-	color: rgb(255,255,255);
-	background-color: rgb(41,52,73);
+	color: #ffffff;
+	background-color: #293449;
 	font-size: 17px;
 	line-height: 18px;
 	border: none;	
 }
 
 .main-header input:hover {
-	color: rgb(255,255,255);
-	background-color: rgb(33,42,58);
+	background-color: #212a3a;
 }
 
 .main-header input:focus {
-	color: rgb(0,0,0);
-	background-color: rgb(255,255,255);
+	color: #000000;
+	background-color: #ffffff;
 	outline: none;
 }
 
 .main-header a {
-	color: rgb(255,255,255);
-	background-color: rgb(41,52,73);
+	color: #ffffff;
 	font-size: 17px;
 	line-height: 18px;
 }
 
 .main-header a:hover {
-	color: rgb(255,255,255);
-	background-color: rgb(33,42,58);
+	background-color: #212a3a;
 }
 
 .main-header a:active {
-	color: rgb(186,187,189);
-	background-color: rgb(22,29,41);
+	color: #8b8e94;
+	background-color: #161d29;
 }
 
-.main-header button {
-	display: inline-block;
+.main-header a.btn-order {
+	display: block;
  	width: 150px;
  	height: 42px;
  	font: inherit;
-	color: rgb(255,255,255);
-	background-color: rgb(99,166,22);
+	color: #ffffff;
+	background-color: #63a63e;
 	font-size: 17px;
 	line-height: 18px;
-	border: none;
+    text-align: center;
 }
 
-.main-header button:hover {
-	color: rgb(255,255,255);
-	background-color: rgb(95,187,45);
+.main-header a.btn-order:hover {
+	background-color: #5fbb2d;
 }
 
-.main-header button:active {
-	color: rgb(182,200,174);
-	background-color: rgb(81,133,52);
+.main-header a.btn-order:active {
+	color: #b6c8ae;
+	background-color: #518534;
 }
 
 .main-header {
-	background-color: rgb(241,245,247);
+	background-color: #f1f5f7;
 }
 
 .main-header h1 {
-	color: rgb(238,54,57);
+	color: #ee3443;
 	font-style: italic;
 	font-size: 16px;
 	line-height: 23px;
 }
 
 .main-header .phone {
-	display:inline-block;
-  width: 270px;
- 	height: 45px;
-  padding-top: 8px;
-	color: rgb(238,54,57);
+	display: block;
+    width: 270px;
+ 	height: 31px;
+    padding-top: 14px;
+	color: #ee3443;
 	font-size: 21px;
 	line-height: 21px;
 	text-align: center;
-	border: 3px solid white;
-	box-sizing: border-box;
+	border: 3px solid #ffffff;
 }
 
 .main-header .adress {
-	color: rgb(50,66,92);
+	color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
 }
 
 .user-navigation a {
- 	display: inline-block;
+ 	display: block;
  	padding-top: 14px;
-	color: rgb(0,0,0);
-	background-color: rgb(255,255,255);
+	color: #000000;
+	background-color: #ffffff;
 	font-size: 21px;
 	line-height: 21px;
 	text-align: center;
-	box-sizing: border-box;
 }
 
 .user-navigation .login-link {
-  width: 121px;
-  height: 45px;
+    width: 121px;
+    height: 45px;
 }
 
 .user-navigation .registration-link {
-  width: 150px;
-  height: 45px;  
+    width: 150px;
+    height: 45px;  
 }
 
 .user-navigation a:hover {
@@ -178,14 +173,14 @@ a {
 }
 
 .main-navigation {
-	background-color: rgb(50,66,92);
-	color: rgb(255,255,255);
+	background-color: #32425c;
+	color: #ffffff;
 }
 
 .site-navigation a {
 	font-size: 17px;
 	line-height: 17px;
-	background-color: rgb(50,66,92);
+	
 }
 
 .site-navigation a:hover {
