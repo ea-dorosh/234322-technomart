@@ -1,69 +1,54 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="main-header">
-        <div class="main-header-top">
-          <a class="main-header-logo" href="index.html">
-            Техномарт
-          </a> 
-          <form class="search-form" method="get" action="">
-                <label>
-                     <input class="visually-hidden" type="search" name="search" placeholder="Поиск:">
-                 </label>
-             </form>
-          <a href="#">Закладки</a>
-          <a href="#">Корзина</a>
-          <button class="btn" type="button">Оформить заказ</button>
-        </div>
-      <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
-      <p class="phone">+7 (812) 555-05-55</p>
-      <p class="adress">г. Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
-      <ul class="user-navigation"> 
-        <li><a class="login-link" href="#">Войти</a></li>
-        <li><a class="registration-link" href="#">Регистрация</a></li>
-      </ul> 
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-            <a href="index.html">Главная</a>
-          </li>
-          <li>
-            <a href="#">Компания</a>
-          </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Новости</a>
-          </li>
-          <li>
-            <a href="#">Спецпредложения</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>  
-    </header>
-  	<main class="container">
-        <div class="bread-crumbs-area">
-          <ul class="bread-crumbs">
-            <li><a href="catalog.html">Каталог</a></li>
-            <li><a href="#">Инструмент</a></li>
-            <li class="bread-crumbs-current">Перфораторы</li>
-          </ul>
-        </div> 
+    <html lang="ru">
+        <head>
+            <meta charset="utf-8">
+            <title>HTML Academy: Техномарт</title>
+            <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+            <link href="css/normalize.css" rel="stylesheet">
+            <link href="css/style.css" rel="stylesheet">
+        </head>
+        <body>
+            <header class="main-header">
+                <div class="main-header-top">
+                    <a class="main-header-logo" href="index.html">Техномарт</a> 
+                    <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+                        <label class="visually-hidden" for="search">Поиск</label>
+                        <input id="search" type="search" name="search" placeholder="Поиск:">
+                    </form>
+                    <a href="#">Закладки</a>
+                    <a href="#">Корзина</a>
+                    <a href="#" class="btn-order">Оформить заказ</a>
+                </div>
+                <div class="main-header-center">
+                    <h1>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</h1>
+                    <p class="phone">+7 (812) 555-05-55</p>
+                    <p class="adress">г. Санкт-Петербург,ул. Б. Конюшенная, д. 19/8</p>
+                    <ul class="user-navigation"> 
+                        <li><a class="login-link" href="#">Войти</a></li>
+                        <li><a class="registration-link" href="#">Регистрация</a></li>
+                    </ul>
+                </div> 
+                <nav class="main-navigation">
+                    <ul class="site-navigation">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Компания</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Спецпредложения</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>  
+            </header>
+            <main class="container">
+                <div class="bread-crumbs-area">
+                    <ul class="bread-crumbs">
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="#">Инструмент</a></li>
+                        <li class="bread-crumbs-current">Перфораторы</li>
+                    </ul>
+                </div> 
         <div class="catalog-name-area"> 
   			   <h2>Перфораторы</h2>
         </div> 
