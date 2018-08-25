@@ -133,7 +133,7 @@ a {
 .main-header .phone {
 	display: block;
     width: 270px;
- 	height: 31px;
+ 	height: 45px;
     padding-top: 14px;
 	color: #ee3443;
 	font-size: 21px;
@@ -402,10 +402,9 @@ a.user-logout {
  	list-style: none;
 }
 
-.popular-items li, 
-.catalog-list li {
+.popular-items li {
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   border: 1px solid #eaeaea;
 }
 
@@ -833,6 +832,7 @@ a.user-logout {
   
   width: 200px;
   height: 38px;
+}
 
 h2.catalog-page {
     width: 940px;
@@ -861,45 +861,45 @@ h2.catalog-page {
   box-sizing: border-box;
 }
 
-fieldset {
-  border: none;
+.filters fieldset {
+    border: none;
 }
 
 
-fieldset legend {
-  font-family: "PT sans", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 30px; 
-  background-color: #ffffff;
-  color: #000000;
-  text-transform: uppercase;
-  font-weight: bold;
+.filters legend {
+    font-family: "PT sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 30px; 
+    background-color: #ffffff;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .range-controls {
-  width: 220px;
-  height: 80px;
-  background-color: #f7f3ec;
+    width: 220px;
+    height: 80px;
+    background-color: #f7f3ec;
 }
 
 .price-control input.min-price,
 .price-control input.max-price {
-  width: 93px;
-  height: 38px;
-  background-color: #f7f3ec;
-  font-family: "PT sans", Arial, sans-serif;
-  font-size: 17px;
-  line-height: 18px;
-  color: #000000;
-  text-transform: uppercase;
-  text-align: center;
-  border: none;
+    width: 93px;
+    height: 38px;
+    background-color: #f7f3ec;
+    font-family: "PT sans", Arial, sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
 }
 
 .filters ul,
 .catalog-header ul,
 .catalog ul {
-  list-style: none;
+    list-style: none;
 }
 
 .filters .filter-option {
