@@ -408,6 +408,12 @@ a.user-logout {
   border: 1px solid #eaeaea;
 }
 
+li.catalog-item {
+    width: 220px;
+    min-height: 318px;
+    border: 1px solid #eaeaea;
+}
+
 .popular-list h3 {
     display: block;
 	font-family: "PT sans", Arial, sans-serif;
