@@ -142,7 +142,7 @@ a {
 	border: 3px solid #ffffff;
 }
 
-.main-header .adress {
+.main-header .address {
 	color: #32425c;
 	font-size: 14px;
 	line-height: 24px;
@@ -936,7 +936,7 @@ h2.catalog-page {
 
 .catalog-header {
   width: 700px;
-  height: min-38px;
+  min-height: 38px;
   background-color: #f7f3ec;
 }
 
@@ -954,7 +954,7 @@ h2.catalog-page {
 .catalog-header a {
   font-family: "PT sans", Arial, sans-serif;
   font-size: 13px;
-  line-height: auto;
+  line-height: 14px;
   color: #c4c1bb;
   text-transform: uppercase;
   text-decoration: underline;
