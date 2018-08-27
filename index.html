@@ -164,6 +164,7 @@
                     <h2>Сервисы</h2>
                     <p>Хороший интрнет-магазин отличается от плохого не только ценами!<br>
                     Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+                    <div class="service-wrapper">
                     <ul class="service-list">
                         <li><button class="btn-service btn-service-current" type="button">Доставка</button></li>
                         <li><button class="btn-service" type="button">Гарантия</button></li>
@@ -174,18 +175,20 @@
                             <h3>Доставка</h3>
                             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
                         </li>
-                        <li>
+                        <li style="display: none">
                             <h3>Гарантия</h3>
                             <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спрвоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>Дом уж восстановите как-нибудь сами.</p>
                         </li>
-                        <li>
+                        <li style="display: none">
                             <h3>Кредит</h3>
                             <p>Залезть в долговую яму стало проще! <br> Кредитные консультанты придут вам на помощь.</p>
                             <a class="btn-main" href="#">Отправить заявку</a>
                         </li>
                     </ul>
+                    </div>
                 </section>
                 <div>
+                    <div class="about-us-contacts-wrapper">
                     <section class="about-us">
                         <h2>Компания "Техномарт"</h2>
                         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -204,34 +207,39 @@
                         <img src="img/mini_map.png" width="300" height="158" alt="карта">
                         <a class="btn-main" href="#">Заблудились? Напишите Нам!</a>
                     </section>
+                    </div>
                 </div>
             </main>	
             <footer class="main-footer">
-                <a class="main-footer-logo" href="index.html">Техномарт</a> 
-                <nav class="footer-navigation">
-                    <ul class="footer-site-navigation">
-                        <li><a href="#">Компания</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="catalog.html">Каталог</a></li>
-                        <li><a href="#">Доставка</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <p class="footer-contacts">г. Санкт-Петербург,ул. Б. Конюшенная, д. 19/8<br>
-                    +7 (812) 555-05-55</p>
-                </div>  
-                <div>
-                    <ul class="footer-categories">
-                        <li><a href="#">Материалы</a></li>
-                        <li><a href="#">Техника</a></li>
-                        <li><a href="#">Инструмент</a></li>
-                        <li><a href="#">Спецпредложения</a></li>
-                    </ul>
+                <div class="footer-top-wrapper">
+                    <a class="main-footer-logo" href="index.html">Техномарт</a> 
+                    <nav class="footer-navigation">
+                        <ul class="footer-site-navigation">
+                            <li><a href="#">Компания</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="catalog.html">Каталог</a></li>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-middle-wrapper">
+                    <div>
+                        <p class="footer-contacts">г. Санкт-Петербург,ул. Б. Конюшенная, д. 19/8<br>
+                        +7 (812) 555-05-55</p>
+                    </div>  
+                    <div>
+                        <ul class="footer-categories">
+                            <li><a href="#">Материалы</a></li>
+                            <li><a href="#">Техника</a></li>
+                            <li><a href="#">Инструмент</a></li>
+                            <li><a href="#">Спецпредложения</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="footer-menu-bottom">
                     <div class="footer-copyrigth">
-                        2010-2017 Компания "Техномарт"
+                        2010-2017 Компания "Техномарт"  
                         Все права защищены
                     </div>
                     <div>
@@ -255,17 +263,16 @@
     <section class="modal modal-write-us">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="write-us-form" method="post" action="https://echo.htmlacademy.ru">
-            <p>
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-                <label for="e-mail">Ваш e-mail:</label>
-                <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com">
-            <p>
-                <label for="message">Текст письма:</label>
-                <textarea name="message" id="message" rows="6" placeholder="В свободной форме"></textarea>
-            </p>
+            <div class="write-us-top-wrapper">
+                <p><label for="name">Ваше имя:</label></p>
+                <p><label for="e-mail">Ваш e-mail:</label></p>
+            </div>
+            <div class="write-us-middle-wrapper">
+                <p><input type="text" name="name" id="name" placeholder="Имя Фамилия"></p>
+                <p><input type="email" name="e-mail" id="e-mail" placeholder="email@example.com"></p>
+            </div>
+            <p><label for="message">Текст письма:</label></p>
+            <p><textarea name="message" id="message" rows="6" placeholder="В свободной форме"></textarea></p>
             <div class="submit-area">
                 <button type="submit" class="btn-main filter-button">Отправить</button>
             </div>  
