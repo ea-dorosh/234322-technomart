@@ -140,7 +140,7 @@ a {
     height: 320px;
 	background-color: #f1f5f7;
     padding: 0px;
-    margin-bottom: 59px;
+    margin-bottom: 0px;
 }
 
 .main-header-center {
@@ -327,6 +327,9 @@ a.user-logout {
 }
 
 .bread-crumbs {
+    display: flex;
+    width: 100%;
+    margin: 0px;
     list-style: none;
     font-family: "PT sans", Arial, sans-serif;
     font-size: 13px;
@@ -336,8 +339,15 @@ a.user-logout {
     text-transform: uppercase;
 }
 
+.bread-crumbs li {
+    width: 100px;
+    height: 60px;
+    padding-top: 23px;
+}
+
 .categories {
     display: flex;
+    margin-top: 59px;
 }
 
 .categories li {
@@ -1078,6 +1088,9 @@ form.write-us-form {
 h2.catalog-page {
     width: 940px;
     height: 89px;
+    margin: 0px;
+    padding-top: 30px;
+    padding-right: 30px;
     background-color: #f2f6f8;
     text-transform: uppercase;
     font-size: 30px;
@@ -1086,10 +1099,15 @@ h2.catalog-page {
     color: #32425c;
 }
 
+.catalog-page-wrapper {
+    display: flex;
+}
+
 .filters h4 {
     display: block;
     width: 220px;
     height: 38px;
+    margin: 0px;
     padding-left: 22px;
     padding-top: 10px;
     font-family: "PT sans", Arial, sans-serif;
@@ -1104,13 +1122,20 @@ h2.catalog-page {
 
 .filters fieldset {
     border: none;
+    padding: 0px;
 }
 
+.filters fieldset:nth-child(1),
+.filters fieldset:nth-child(2) {
+    border-bottom: 1px solid #e5e5e5;
+}
 
 .filters legend {
+    height: 55px;
+    padding-top: 18px;
     font-family: "PT sans", Arial, sans-serif;
     font-size: 17px;
-    line-height: 30px; 
+    line-height: 18px; 
     background-color: #ffffff;
     color: #000000;
     text-transform: uppercase;
@@ -1137,10 +1162,22 @@ h2.catalog-page {
     border: none;
 }
 
+.price-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 9px;
+    margin-bottom: 25px;
+}
+
 .filters ul,
 .catalog-header ul,
 .catalog ul {
     list-style: none;
+}
+
+.filters ul {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .filters .filter-option {
