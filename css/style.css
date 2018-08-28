@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    min-width: 960px;
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -924,8 +925,8 @@ ul.footer-site-navigation {
 .footer-menu-bottom {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 940px;
+    
+    width: 100%;;
     height: 107px;
     color: #ffffff;
     background-color: rgb(41,52,73);
@@ -1083,7 +1084,7 @@ form.write-us-form {
 h2.catalog-page {
     width: 940px;
     height: 89px;
-    margin: 0px
+    margin: 0px;
     margin-bottom: 20px;
     padding-top: 30px;
     padding-right: 30px;
@@ -1097,6 +1098,7 @@ h2.catalog-page {
 
 .catalog-page-wrapper {
     display: flex;
+    margin-bottom: 60px;
 }
 
 .filters {
@@ -1214,6 +1216,7 @@ h2.catalog-page {
     width: 700px;
     height: 38px;
     background-color: #f7f3ec;
+    margin-bottom: 20px;
 }
 
 .catalog-header h4 {
@@ -1249,6 +1252,7 @@ h2.catalog-page {
     flex-wrap: wrap;
     width: 700px;
     margin: 0px;
+    margin-bottom: 32px;
     padding: 0px;
 }
 
@@ -1258,6 +1262,7 @@ li.catalog-item {
     align-items: center;
     margin-right: 20px;
     margin-bottom: 20px;
+    border: 1px solid #eaeaea;
 }
 
 li.catalog-item:nth-child(3n) {
@@ -1299,24 +1304,66 @@ li.catalog-item:nth-child(3n) {
 
 ul.pagination-list {
     display: flex;
-    
+    padding: 0px;
+    margin: 0px;
+}
+
+.pagination-item {
+    font-family: "PT sans", Arial, sans-serif;
+    font-size: 13px;
+    border: 1px solid #eaeaea;
+    width: 38px;
+    height: 38px;
+    line-height: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 5%;
+}
+
+li.btn-catalog.pagination-item {
+    width: 140px;
+}
+
+.pagination-item:hover {
+    border-color: #bdc6ca;
+}
+
+.pagination-item:active {
+    border-color: #ee3643;
+}
+
+.pagination-item-current {
+    background-color: #ee3643;
+    color: #ffffff;
+    border: none;
 }
 
 .description {
+    margin: 0px;
+    width: 940px;
     background-color: #f2f6f8;
+    font-family: "PT sans", Arial, sans-serif;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #000000;
+    font-weight: 500;
 }
 
 .description h3 {
+    font-family: "Cuprum", Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
     color: #000000;
     font-weight: 500;
+    margin: 0px;
+    margin-bottom: 35px;
 }
 
-.description  {
-    font-size: 13px;
-    line-height: 24px;
-    color: #000000;
-    font-weight: 500;
+.description  p{
+    margin: 0px;
 }
