@@ -70,19 +70,20 @@
                 <section class="filters"> 
                     <h4>Фильтр:</h4>
                     <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                        <fieldset class="filter-price">
+                        <fieldset class="filter-item">
                             <legend>Цена:</legend>
-                            <div class="range-controls">
-                                <div class="range-scale"></div>
-                                <div class="range-filter-min"></div>
-                                <div class="range-filter-max"></div>
-                            </div>
-                            <div class="price-control">
-                                <label class="visually-hidden" for="min-price">Минимальная цена</label>
-                                <input class="min-price" id="min-price" type="text" name="min-price" placeholder="0">
-                                <span>—</span>
-                                <label class="visually-hidden" for="max-price">Максимальная цена</label>
-                                <input class="max-price" id="max-price" type="text" name="max-price" placeholder="30000">
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                </div>
+                                <div class="price-controls">
+                                    <label class="min-price"><span class="visually-hidden">от</span><input name="min-price" type="text" value="0"></label>
+                                    <label class="max-price"><span class="visually-hidden">до</span><input name="max-price" type="text" value="30000"></label>
+                                </div>
                             </div>
                         </fieldset>
                         <fieldset class="filter-producer">
