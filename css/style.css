@@ -81,56 +81,76 @@ a {
 	border-bottom: 5px solid #8e1e26;
 }
 
-.main-header input[type="search"]::-webkit-input-placeholder {
-	color: #ffffff;
+.search-form {
+	width: 270px;
+	display: flex;
+	flex-direction: row-reverse;
 }
 
-.main-header input {
-	width: 270px;
+.search-input {
+	width: 220px;
 	height: 42px;
 	padding-top: 7px;
 	padding-right: 20px;
 	padding-bottom: 9px;
-	padding-left: 48px;
+	padding-left: 0;
 	font: inherit;
 	color: #ffffff;
 	background-color: #293449;
 	font-size: 17px;
 	line-height: 18px;
-	border: none; 
+	border: none;
+	outline: none;
 }
 
-.main-header input:hover {
+.search-input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+
+.search-label {
+	flex-grow: 1;
+	padding: 12px 14px 0 17px;
+	margin-bottom: 5px;
+}
+
+.icon-search {
+	fill: #ffffff;
+	background-color: transparent;
+	opacity: 0.3;
+}
+
+.search-input:hover,
+.search-input:hover ~ .search-label {
+	color: #ffffff;
 	background-color: #212a3a;
 }
 
-.main-header input:focus {
+.search-input:hover ~ .search-label .icon-search {
+	background-color: transparent;
+	opacity: 1;
+}
+
+.search-input:focus {
 	color: #000000;
 	background-color: #ffffff;
 }
 
-.main-header label {
-	
-	top: 12px;
-	left: 487px;
+.search-input:focus::-webkit-input-placeholder {
+	color: #000000;
 }
 
-.search-form path {
-	opacity: 0.3;
+.search-input:focus ~ .search-label {
+	background-color: #ffffff;
 }
 
-.search-form svg {
-	width: 17px;
-	height: 17px;
-}
-
-.search-form path:hover {
-	opacity: 1;
-	fill: #32425c;
-}
-
-.search-form:focus path {
+.search-input:focus + .search-label .icon-search {
 	fill: #ee3643;
+	opacity: 1;
+}
+
+.search-input:active + .search-label .icon-search {
+	opacity: 0.5;
+	background-color: transparent;
 }
 
 .main-header-top a {
@@ -576,7 +596,7 @@ color: #cacaca;
 	display: flex;
 	margin-bottom: 33px;
 	margin-top: 59px;
-}    
+}
 
 .categories-wrapper-left {
 	position: relative;
@@ -1862,6 +1882,12 @@ p.about-service {
 	border-bottom-left-radius: 4px;
 }
 
+.dash {
+	width: 10px;
+	border-top: 1px solid black;
+	margin-top: 18px;
+}
+
 			/* фильтр производителей */
 .filters .filter-producer {
 	margin-top: 22px;
@@ -2246,7 +2272,7 @@ li.btn-catalog.pagination-item {
 	border: none;
 }
 
-	/* стили для описания в катлоге */
+	/* стили для описания в каталоге */
 
 .description {
 	width: 100%;
@@ -2302,7 +2328,7 @@ li.btn-catalog.pagination-item {
 
 .modal-write-us {
 	display: none;
-	bottom: 200px;
+	top: 190px;
 	left: 50%;
 	width: 620px;
 	margin-left: -310px;
@@ -2315,7 +2341,7 @@ li.btn-catalog.pagination-item {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-top: 45px;
+	padding-top: 47px;
 	padding-right: 80px;
 	padding-left: 80px;
 }
@@ -2343,7 +2369,7 @@ li.btn-catalog.pagination-item {
 .write-us-item label,
 .write-us-item-message label {
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 9px;
 }
 
 .write-us-item input,
@@ -2354,9 +2380,13 @@ li.btn-catalog.pagination-item {
 	border-radius: 3px;
 	padding-left: 13px;
 	padding-right: 13px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	margin-bottom: 19px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin-bottom: 21px;
+}
+
+.write-us-item-message textarea {
+	padding-bottom: 12px;
 }
 
 .write-us-item input:hover,
@@ -2383,7 +2413,7 @@ li.btn-catalog.pagination-item {
 .submit-area {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 39px;
+	margin-top: 12px;
 	padding: 0;
 	background-color: #f4f4f4;
 	padding-right: 80px;
