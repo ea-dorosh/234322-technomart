@@ -2279,8 +2279,11 @@ li.btn-catalog.pagination-item {
 
 .pagination-item-current {
 	background-color: #ee3643;
-	color: #ffffff;
 	border: none;
+}
+
+.pagination-item-current a {
+	color: #ffffff;
 }
 
 	/* стили для описания в каталоге */
