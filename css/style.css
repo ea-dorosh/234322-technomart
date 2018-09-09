@@ -697,35 +697,35 @@ color: #cacaca;
 
 .categories-promo-left li:nth-child(1) {
 	background-color: #ffbf47;
-	background-image: url(../img/vedro.svg);
+	background-image: url(../img/bucket.svg);
 	background-repeat: no-repeat;
 	background-position: 213px 31px;
 }
 
 .categories-promo-left li:nth-child(2) {
 	background-color: #3bbce3; 
-	background-image: url(../img/drel.svg);
+	background-image: url(../img/drill.svg);
 	background-repeat: no-repeat;
 	background-position:  197px 33px;
 }
 
 .categories-promo-right li:nth-child(1) {
 	background-color: #dc91d8;
-	background-image: url(../img/traktor.svg);
+	background-image: url(../img/tractor.svg);
 	background-repeat: no-repeat;
 	background-position:  191px 31px;     
 }
 
 .categories-promo-right li:nth-child(2) {
 	background-color: #8ed78f; 
-	background-image: url(../img/telega-4.svg);
+	background-image: url(../img/handcart.svg);
 	background-repeat: no-repeat;
 	background-position:  196px 26px;  
 }
 
 .categories-promo-right li:nth-child(3) {
 	background-color: #ffc047;
-	background-image: url(../img/dostavka.svg);
+	background-image: url(../img/delivery.svg);
 	background-repeat: no-repeat;
 	background-position:  191px 32px;   
 }
@@ -798,7 +798,7 @@ color: #cacaca;
 .catalog-promo li:nth-child(2) {
 	width: 620px;
 	height: 266px;
-	background-image: url(../img/catalog_drel.jpg);
+	background-image: url(../img/catalog_drill.jpg);
 }
 
 .catalog-item-promo {
