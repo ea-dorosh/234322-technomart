@@ -2006,6 +2006,7 @@ p.about-us-p {
 /* кнопка фильтра */
 
 .btn-catalog {
+	font-family: "PT sans", Arial, sans-serif;
 	padding-top: 6px;
 	font-size: 13px;
 	line-height: 18px;
@@ -2258,6 +2259,10 @@ ul.pagination-list {
 	text-align: center;
 	margin-right: 10px;
 	border-radius: 5%;
+}
+
+.pagination-item a {
+	color: #000000;
 }
 
 li.btn-catalog.pagination-item {
