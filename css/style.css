@@ -1465,7 +1465,7 @@ p.about-us-p {
 	height: 38px;
 }
 
-								/* стили для "КОНТАКТЫ" */
+			/* стили для "КОНТАКТЫ" */
 
 .contacts {
 	width: 300px;
@@ -1510,7 +1510,11 @@ p.about-us-p {
 	padding-left: 15px; 
 }
 
-				/* СТИЛИ ДЛЯ ФУТЕРА */
+a.btn-popup-map {
+	padding: 0;
+}
+
+		/* СТИЛИ ДЛЯ ФУТЕРА */
 
 .main-footer {
 	background-color: #32425c;
@@ -2336,6 +2340,7 @@ li.btn-catalog.pagination-item {
 	background-image: url(../img/icon-close.svg);
 	font-size: 0;
 	border: 0;
+	z-index: 2;
 }
 
 	/* СТИЛИ ДЛЯ "НАПИШИТЕ НАМ" (ПОПАП) */
@@ -2454,7 +2459,17 @@ li.btn-catalog.pagination-item {
 }
 
 .modal-map p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
 	margin: 0;
+}
+
+.modal-map iframe {
+	position: relative;
+	z-index: 2;
+	border: none;
 }
 
 /* СТИЛИ ДЛЯ В КОРЗИНУ (ПОПАП) */
@@ -2492,4 +2507,28 @@ li.btn-catalog.pagination-item {
 
 .submit-area a {
 	width: 200px;
+}
+
+@keyframes bounce {
+	0% { transform: translateY(2000px); }
+	70% { transform: translateY(-60px); }
+	90% { transform: translateY(20px); }
+	100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+	0%, 100% { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+	20%, 40%, 60%, 80% { transform: translateX(10px); }
+}
+
+.modal-show {
+	display: block;
+	animation-name: bounce;
+	animation-duration: 0.7s;
+}
+
+.modal-error {
+	animation-name: shake;
+	animation-duration: 0.6s;
 }
