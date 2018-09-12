@@ -1742,7 +1742,7 @@ a.btn-popup-map {
 	color: #ee3643;
 }
 
-				/* СТИЛИ ДЛЯ СТРАНИЦЫ КАТАЛОГА */
+		/* СТИЛИ ДЛЯ СТРАНИЦЫ КАТАЛОГА */
 
 .filters ul,
 .catalog-header ul,
@@ -1886,7 +1886,6 @@ a.btn-popup-map {
 	margin: 0;
 	font-size: 17px;
 	text-transform: uppercase;
-
 }
 
 .price-controls input {
@@ -1908,6 +1907,7 @@ a.btn-popup-map {
 }
 
 			/* фильтр производителей */
+
 .filters .filter-producer {
 	margin-top: 22px;
 	padding-top: 20px;
@@ -1934,19 +1934,8 @@ a.btn-popup-map {
 	font-weight: 500;
 }
 
-.filter-producer-list .filter-option-on::before {
-	content: "";
-	position: absolute;
-	width: 27px;
-	height: 23px;
-	top: -2px;
-	left: -34px;
-	background-image: url(../img/checkbox-on.svg);
-	background-repeat: no-repeat;
-}
 
-.filter-producer-list .filter-option-off::before {
-	content: "";
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
 	position: absolute;
 	width: 27px;
 	height: 23px;
@@ -1956,12 +1945,22 @@ a.btn-popup-map {
 	background-repeat: no-repeat;
 }
 
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+	content: "";
+	position: absolute;
+	width: 27px;
+	height: 23px;
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+}
+
 .filters .filter-producer-list {
 	margin: 0;
 	padding: 0;
 	padding-left: 34px;   
 }
-				/* фильтр питания */
+			/* фильтр питания */
+
 .filters .filter-energy {
 	margin-top: 23px;
 	padding-top: 20px;
@@ -1987,25 +1986,22 @@ a.btn-popup-map {
 	font-weight: 500;
 }
 
-.filter-energy-list .filter-option-on::before {
-	content: "";
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	top: -2px;
-	left: -34px;
-	background-image: url(../img/radio-on.svg);
-	background-repeat: no-repeat;
-}
-
-.filter-energy-list .filter-option-off::before {
-	content: "";
+.filter-radio input[type="radio"] + .radio-indicator {
 	position: absolute;
 	width: 25px;
 	height: 25px;
 	top: -2px;
 	left: -34px;
 	background-image: url(../img/radio-off.svg);
+	background-repeat: no-repeat;
+}
+
+.filter-radio input[type="radio"]:checked + .radio-indicator::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-image: url(../img/radio-on.svg);
 	background-repeat: no-repeat;
 }
 
@@ -2037,11 +2033,9 @@ a.btn-popup-map {
 	height: 38px;
 }
 
-
-
 /* СТИЛИ ДЛЯ КАТАЛОГА ТОВАРА */
 	
-				/* СТИЛИ ДЛЯ ШАПКИ КАТАЛОГА ТОВАРА */
+			/* СТИЛИ ДЛЯ ШАПКИ КАТАЛОГА ТОВАРА */
 
 .catalog-header {
 	display: flex;

@@ -94,39 +94,61 @@
 							</fieldset>
 							<fieldset class="filter-producer">
 								<legend>Производители:</legend>
+
+<!--label class="login-checkbox">
+        <input type="checkbox" name="remember" class="visually-hidden">
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+</label-->
+
 								<ul class="filter-producer-list">
-									<li class="filter-option filter-option-on">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="filter-bosch" checked>
-										<label for="filter-bosch">Bosch</label>
+									<li class="filter-option">
+										<label class="filter-checkbox">
+										<input class="visually-hidden" type="checkbox" name="Bosch" id="filter-bosch" checked>
+										<span class="checkbox-indicator"></span>
+										Bosch
+										</label>
+									</li>
+									<li class="filter-option">
+										<label class="filter-checkbox">
+										<input class="visually-hidden" type="checkbox" name="Interscol" id="filter-interscol">
+										<span class="checkbox-indicator"></span>
+										Интерскол</label>
+									</li>
+									<li class="filter-option">
+										<label class="filter-checkbox">
+										<input class="visually-hidden" type="checkbox" name="Makita" id="filter-makita" checked>
+										<span class="checkbox-indicator"></span>
+										Makita</label>
+									</li>
+									<li class="filter-option">
+										<label class="filter-checkbox">
+										<input class="visually-hidden" type="checkbox" name="Dewalt" id="filter-dewalt">
+										<span class="checkbox-indicator"></span>
+										Dewalt</label>
 									</li>
 									<li class="filter-option filter-option-off">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Interscol" id="filter-interscol">
-										<label for="filter-interscol">Интерскол</label>
-									</li>
-									<li class="filter-option filter-option-on">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="filter-makita" checked>
-										<label for="filter-makita">Makita</label>
-									</li>
-									<li class="filter-option filter-option-off">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="filter-dewalt">
-										<label for="filter-dewalt">Dewalt</label>
-									</li>
-									<li class="filter-option filter-option-off">
-										<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="filter-hitachi">
-										<label for="filter-hitachi">Hitachi</label>
+										<label class="filter-checkbox">
+										<input class="visually-hidden" type="checkbox" name="Hitachi" id="filter-hitachi">
+										<span class="checkbox-indicator"></span>
+										Hitachi</label>
 									</li>
 								</ul>
 							</fieldset>
 							<fieldset class="filter-energy">
 								<legend>Питание:</legend>
 								<ul class="filter-energy-list">
-									<li class="filter-option filter-option-on">
-										<input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-group" value="battery" id="filter-battery" checked>
-										<label for="filter-battery">Аккумуляторные</label>
+									<li class="filter-option">
+										<label class="filter-radio">
+										<input class="visually-hidden" type="radio" name="power-group" value="battery" id="filter-battery" checked>
+										<span class="radio-indicator"></span>
+										Аккумуляторные</label>
 									</li>
-									<li class="filter-option filter-option-off">
-										<input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-group" value="ac-power" id="filter-ac-power">
-										<label for="filter-ac-power">Сетевые</label>
+									<li class="filter-option">
+										<label class="filter-radio">
+										<input class="visually-hidden" type="radio" name="power-group" value="ac-power" id="filter-ac-power">
+										<span class="radio-indicator"></span>
+										Сетевые</label>
 									</li>
 								</ul>
 							</fieldset>
