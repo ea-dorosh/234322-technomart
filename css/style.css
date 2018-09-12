@@ -795,12 +795,14 @@ color: #cacaca;
 	width: 620px;
 	height: 266px;
 	background-image: url(../img/catalog_perforator.jpg);
+	background-color: #685c53;
 }
 
 .catalog-promo li:nth-child(2) {
 	width: 620px;
 	height: 266px;
 	background-image: url(../img/catalog_drill.jpg);
+	background-color: #685c53;
 }
 
 .catalog-item-promo {
