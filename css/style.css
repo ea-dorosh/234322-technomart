@@ -946,6 +946,7 @@ li.popular-item {
 	margin-right: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #eaeaea;
+	background-color: lightblue;
 }
 
 li.popular-item:nth-child(4n) {
