@@ -748,6 +748,7 @@ color: #cacaca;
 .slider-controls i {
 	position: relative;
 	display: inline-block;
+	vertical-align: middle;
 	width: 10px;
 	height: 10px;
 	padding: 8px;
@@ -946,7 +947,6 @@ li.popular-item {
 	margin-right: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #eaeaea;
-	background-color: lightblue;
 }
 
 li.popular-item:nth-child(4n) {
@@ -1541,6 +1541,7 @@ a.btn-popup-map {
 	padding-top: 18px;
 	border-bottom: 5px solid #b52933;
 	font-weight: 500;
+	vertical-align: middle;
 }
 
 .main-footer .main-footer-logo:hover {
