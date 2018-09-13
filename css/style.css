@@ -1943,6 +1943,11 @@ a.btn-popup-map {
 	left: -34px;
 	background-image: url(../img/checkbox-off.svg);
 	background-repeat: no-repeat;
+	opacity: 0.7;
+}
+
+.filter-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+	opacity: 1;
 }
 
 .filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
@@ -1994,6 +1999,11 @@ a.btn-popup-map {
 	left: -34px;
 	background-image: url(../img/radio-off.svg);
 	background-repeat: no-repeat;
+	opacity: 0.7;
+}
+
+.filter-radio input[type="radio"]:hover + .radio-indicator {
+	opacity: 1;
 }
 
 .filter-radio input[type="radio"]:checked + .radio-indicator::after {
@@ -2003,6 +2013,11 @@ a.btn-popup-map {
 	height: 25px;
 	background-image: url(../img/radio-on.svg);
 	background-repeat: no-repeat;
+	opacity: 0.7;
+}
+
+.filter-radio input[type="radio"]:checked:hover + .radio-indicator::after {
+	opacity: 1;
 }
 
 .filter-energy-list {
