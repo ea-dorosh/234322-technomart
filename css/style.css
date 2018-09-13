@@ -38,12 +38,12 @@ a {
 /* СТИЛИ ДЛЯ ХЕДЕРА */
 				
 .main-header {
-	height: 320px;
+	min-height: 320px;
 	background-color: #f1f5f7;
 }
 
 
-				/* СТИЛИ ДЛЯ main-header-top */
+			/* СТИЛИ ДЛЯ main-header-top */
 
 .main-header-top {
 	height: 42px;
@@ -1946,7 +1946,8 @@ a.btn-popup-map {
 	opacity: 0.7;
 }
 
-.filter-checkbox input[type="checkbox"]:hover + .checkbox-indicator {
+.filter-checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
 	opacity: 1;
 }
 
@@ -1957,6 +1958,10 @@ a.btn-popup-map {
 	height: 23px;
 	background-image: url(../img/checkbox-on.svg);
 	background-repeat: no-repeat;
+}
+
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+	opacity: 0.3;
 }
 
 .filters .filter-producer-list {
@@ -2002,7 +2007,8 @@ a.btn-popup-map {
 	opacity: 0.7;
 }
 
-.filter-radio input[type="radio"]:hover + .radio-indicator {
+.filter-radio input[type="radio"]:hover + .radio-indicator,
+.filter-radio input[type="radio"]:focus + .radio-indicator {
 	opacity: 1;
 }
 
@@ -2018,6 +2024,10 @@ a.btn-popup-map {
 
 .filter-radio input[type="radio"]:checked:hover + .radio-indicator::after {
 	opacity: 1;
+}
+
+.filter-radio input[type="radio"]:disabled + .radio-indicator {
+	opacity: 0.3;
 }
 
 .filter-energy-list {
@@ -2263,6 +2273,10 @@ li.catalog-item:nth-child(3n) {
 	height: 0;
 	border: 19px solid white;
 	border-left-color: #ee3643;
+}
+
+.catalog-list img {
+	
 }
 
 		/* СТИЛИ ДЛЯ НУМЕРАЦИИ СТРАНИЦ КАТАЛОГА ТОВАРА */

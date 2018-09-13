@@ -3,7 +3,7 @@ var popupCart = document.querySelector(".modal-cart");
 var closeCart = popupCart.querySelector(".modal-close");
 console.log(buyButtons);
 
-for (var i = 0; i < buyButtons.lenght; i++ ) {
+for (var i = 0; i < buyButtons.length; i++ ) {
 	buyButtons[i].addEventListener("click", function (evt) {
 		evt.preventDefault();
 		popupCart.classList.add("modal-show");
