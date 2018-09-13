@@ -1,22 +1,22 @@
 var writeUsLink = document.querySelector(".btn-write-us");
 var popupWriteUs = document.querySelector(".modal-write-us");
-var close = document.querySelector(".modal-close")
+var close = document.querySelector(".modal-close");
 var form = popupWriteUs.querySelector(".write-us-form");
 var yourName = popupWriteUs.querySelector("[name=name]");
 var yourEMail = popupWriteUs.querySelector("[name=e-mail]");
-var yourMessage = popupWriteUs.querySelector('.write-us-item-message');
-var storageName = localStorage.getItem("yourName");
-var storageEMail = localStorage.getItem("yourEMail");
+var yourMessage = popupWriteUs.querySelector("[name=message]");
 
 var mapLink = document.querySelector(".btn-popup-map");
 var popupMap = document.querySelector(".modal-map");
-var closeMap = popupMap.querySelector(".modal-close")
+var closeMap = popupMap.querySelector(".modal-close");
 
 var isStorageSupport = true;
-var storage = "";
+var storageName = "";
+var storageEMail = "";
 
 try {
-	storage = localStorage.getItem("yourName");
+	storageName = localStorage.getItem("yourName");
+	storageEMail = localStorage.getItem("yourEMail");
 } catch (err) {
 	isStorageSupport = false;
 }
@@ -29,6 +29,12 @@ writeUsLink.addEventListener("click", function (evt) {
 		yourEMail.focus();
 	} else {
 		yourName.focus();
+	}
+	if (storageEMail) {
+		yourEMail.value = storageEMail;
+		yourMessage.focus();
+	} else {
+		yourEMail.focus();
 	}
 });
 
@@ -60,7 +66,7 @@ window.addEventListener("keydown", function(evt) {
 			popupWriteUs.classList.remove("modal-error");
 		}
 	}
-})
+});
 
 mapLink.addEventListener("click", function (evt) {
 	evt.preventDefault();
@@ -79,4 +85,4 @@ window.addEventListener("keydown", function(evt) {
 			popupMap.classList.remove("modal-show");
 		}
 	}
-})
+});
