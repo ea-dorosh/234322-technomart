@@ -793,12 +793,12 @@ color: #cacaca;
 	background-position:  191px 32px;   
 }
 
-				/* СТИЛИ ДЛЯ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДЕРА */
+		/* СТИЛИ ДЛЯ ПЕРЕКЛЮЧАТЕЛЕЙ СЛАЙДЕРА */
 
 .slider-controls {
 	position: absolute;
 	left: 50%;
-	bottom: 60px;
+	bottom: 64px;
 	z-index: 100;
 	width: 100px;
 	height: 18px;
@@ -845,6 +845,39 @@ color: #cacaca;
 	background-color: #ee3643;
 	border: 2px solid #ee3643;
 	border-radius: 50%;
+}
+
+/* СТИЛИ ДЛЯ КНОПОК СЛАЙДЕРА */
+
+.catalog-btn {
+	border: none;
+	padding: 0;
+}
+
+.slider-buttons {
+	position: absolute;
+	bottom: 150px;
+	width: 100%;
+}
+
+.catalog-btn-back::after {
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 40px;
+	top: 2px;
+	left: 24px;
+	background-image: url(../img/icon-left.svg)
+}
+
+.catalog-btn-next::after {
+	content: "";
+	position: absolute;
+	width: 22px;
+	height: 40px;
+	top: 2px;
+	left: 577px;
+	background-image: url(../img/icon-right.svg);
 }
 	
 				/* СТИЛИ ДЛЯ СЛАЙДЕРА ПРОМО */
@@ -928,35 +961,6 @@ color: #cacaca;
 
 .btn-main-white:hover {
 	background-color: #ffffff;
-}
-
-.catalog-item-promo .catalog-btn {
-	border: none;
-	padding: 0;
-}
-
-.catalog-item-promo {
-	position: relative;
-}
-
-.catalog-item-promo .catalog-btn-back::after {
-	content: "";
-	position: absolute;
-	width: 22px;
-	height: 40px;
-	top: 114px;
-	left: 24px;
-	background-image: url(../img/icon-left.svg)
-}
-
-.catalog-item-promo .catalog-btn-next::after {
-	content: "";
-	position: absolute;
-	width: 22px;
-	height: 40px;
-	top: 114px;
-	right: 20px;
-	background-image: url(../img/icon-right.svg);
 }
 
 .catalog-promo a {
