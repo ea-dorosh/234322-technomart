@@ -179,9 +179,9 @@ window.addEventListener("keydown", function (evt) {
 // код для "слайдера" //
 
 sliderBtnNext.addEventListener("click", function() {
-	showNextSlide;
+	showNextSlide();
 });
 
 sliderBtnBack.addEventListener("click", function() {
-	showPrevSlide;
+	showPrevSlide();
 });
