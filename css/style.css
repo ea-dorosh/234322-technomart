@@ -866,7 +866,7 @@ color: #cacaca;
 	width: 22px;
 	height: 40px;
 	top: 2px;
-	left: 24px;
+	left: 25px;
 	background-image: url(../img/icon-left.svg)
 }
 
@@ -876,7 +876,7 @@ color: #cacaca;
 	width: 22px;
 	height: 40px;
 	top: 2px;
-	left: 577px;
+	left: 578px;
 	background-image: url(../img/icon-right.svg);
 }
 	
@@ -967,8 +967,8 @@ color: #cacaca;
 	display: block;
 	width: 195px;
 	height: 38px;
-	margin-top: 97px;
-	margin-left: 26px;
+	margin-top: 121px;
+	margin-left: 25px;
 }
 
 				/* СТИЛИ ДЛЯ ПОПУЛЯРНЫХ ТОВАРОВ */

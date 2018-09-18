@@ -31,6 +31,48 @@ if (popupCart) {
 	var closeCart = popupCart.querySelector(".modal-close");
 };
 
+// переменные для "слайдера" //
+
+var currentSlide = document.querySelector(".catalog-item-promo-active");
+var currentSlideIndex;
+var sliderBtnNext = document.querySelector(".catalog-btn-next");
+var sliderBtnBack = document.querySelector(".catalog-btn-back");
+var sliderItems = document.querySelectorAll(".catalog-item-promo");
+
+var getCurrentSlideIndex = function () {
+	for (var i = 0; i < sliderItems.length; i++) {
+		if (sliderItems[i].classList.contains("catalog-item-promo-active")) {
+			currentSlideIndex = i;
+		}
+	}
+};
+
+getCurrentSlideIndex ();
+
+var showNextSlide = function () {
+	currentSlide.classList.remove("catalog-item-promo-active");
+	if (currentSlideIndex + 1 < sliderItems.length) {
+		currentSlideIndex = currentSlideIndex + 1;
+	} else {
+		currentSlideIndex = 0;
+	}
+	sliderItems[currentSlideIndex].classList.add("catalog-item-promo-active");
+	currentSlide = document.querySelector(".catalog-item-promo-active");
+};
+
+var showPrevSlide = function () {
+	currentSlide.classList.remove("catalog-item-promo-active");
+	if (currentSlideIndex - 1 >= sliderItems.length) {
+		currentSlideIndex = currentSlideIndex - 1;
+	} else {
+		currentSlideIndex = sliderItems.length -1;
+	}
+	sliderItems[currentSlideIndex].classList.add("catalog-item-promo-active");
+	currentSlide = document.querySelector(".catalog-item-promo-active");
+};
+
+
+
 // код для "напишите нам" //
 
 try {
@@ -58,17 +100,13 @@ if (popupWriteUs) {
 			yourName.focus();
 		}
 	})
-};
 
-if (popupWriteUs) {
 	close.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		popupWriteUs.classList.remove("modal-show");
 		popupWriteUs.classList.remove("modal-error");
 	});
-};
 
-if (popupWriteUs) {
 	form.addEventListener("submit", function (evt) {
 		if (!yourName.value || !yourEMail.value || !yourMessage.value) {
 			evt.preventDefault();
@@ -101,9 +139,7 @@ if (popupMap) {
 		evt.preventDefault();
 		popupMap.classList.add("modal-show");
 	})
-};
 
-if (popupMap) {
 	closeMap.addEventListener("click", function (evt) {
 		evt.preventDefault();
 		popupMap.classList.remove("modal-show");
@@ -140,5 +176,12 @@ window.addEventListener("keydown", function (evt) {
 	}
 });
 
+// код для "слайдера" //
 
+sliderBtnNext.addEventListener("click", function() {
+	showNextSlide;
+});
 
+sliderBtnBack.addEventListener("click", function() {
+	showPrevSlide;
+});
